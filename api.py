@@ -5,6 +5,8 @@ import os
 
 app = Flask(__name__)
 UPLOAD_FOLDER = "/static"
+DEVICE = "cpu"
+MODEL = None
 
 @app.route("/", methods=["GET", "POST"])
 def upload_predict():
